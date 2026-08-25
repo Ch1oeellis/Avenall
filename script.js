@@ -81,7 +81,7 @@ if (inquiryForm) {
       message,
     ].join('\n');
 
-    const mailto = `mailto:avenalladvantage@oei-wi.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:avenalloats@oei-wi.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     const btn = inquiryForm.querySelector('button[type="submit"]');
     const original = btn.textContent;
