@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1100 490" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .lbl-eyebrow { font-family: Jost, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600; }
+      .lbl-title   { font-family: Spectral, Georgia, serif; font-size: 25px; font-weight: 500; }
+      .lbl-caption { font-family: Jost, 'Helvetica Neue', Arial, sans-serif; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; font-weight: 500; }
+      .lbl-big     { font-family: Spectral, Georgia, serif; font-size: 56px; font-weight: 600; }
+      .lbl-sub     { font-family: Jost, 'Helvetica Neue', Arial, sans-serif; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1100" height="490" fill="#F7F6EC"/>
+
+  <!-- Left: Colloidal Oatmeal, large particle -->
+  <g>
+    <circle cx="230" cy="230" r="140" fill="#6F7030" fill-opacity="0.14" stroke="#6F7030" stroke-width="2.5"/>
+    <text x="230" y="420" text-anchor="middle" class="lbl-eyebrow" fill="#6F7030">Colloidal Oatmeal</text>
+    <text x="230" y="455" text-anchor="middle" class="lbl-title" fill="#0B4451">~2μm Particle</text>
+    <text x="230" y="480" text-anchor="middle" class="lbl-caption" fill="#52573F">Sits on the Surface of Skin</text>
+  </g>
+
+  <!-- Center: the 2,000x callout -->
+  <g>
+    <text x="550" y="200" text-anchor="middle" class="lbl-big" fill="#C7714C">2,000&#215;</text>
+    <text x="550" y="230" text-anchor="middle" class="lbl-sub" fill="#52573F">Smaller</text>
+    <line x1="440" y1="270" x2="660" y2="270" stroke="#C7714C" stroke-width="2" stroke-dasharray="6 8"/>
+  </g>
+
+  <!-- Right: Avenall oat actives, echoing the brand mark -->
+  <g>
+    <circle cx="870" cy="230" r="66" fill="none" stroke="#0B4451" stroke-width="2" stroke-dasharray="8 7" opacity="0.55"/>
+    <circle cx="870" cy="230" r="44" fill="none" stroke="#C7714C" stroke-width="2.5"/>
+    <circle cx="870" cy="230" r="11" fill="#6E2811"/>
+    <text x="870" y="420" text-anchor="middle" class="lbl-eyebrow" fill="#C7714C">Avenall™ Oat Actives</text>
+    <text x="870" y="455" text-anchor="middle" class="lbl-title" fill="#0B4451">Fermented, Bioavailable</text>
+    <text x="870" y="480" text-anchor="middle" class="lbl-caption" fill="#52573F">Diffuses Into the Skin</text>
+  </g>
+</svg>
