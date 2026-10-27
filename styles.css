@@ -498,7 +498,7 @@ section { position: relative; }
   position: relative;
   z-index: 1;
   margin: auto 0 clamp(48px, 8vh, 100px);
-  font-size: 33vw;
+  font-size: 30vw;
   font-weight: 400;
   line-height: 0.74;
   letter-spacing: -0.035em;
