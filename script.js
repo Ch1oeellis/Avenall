@@ -15,6 +15,14 @@ if (splash) {
   setTimeout(hideSplash, 3800);
 }
 
+// Home page header — transparent over the hero photo, solid once the page scrolls
+const overlayHeader = document.querySelector('.site-header--overlay');
+if (overlayHeader) {
+  const syncHeader = () => overlayHeader.classList.toggle('is-scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', syncHeader, { passive: true });
+  syncHeader();
+}
+
 // Highlight the current page in the nav
 document.querySelectorAll('.main-nav a').forEach((link) => {
   if (link.pathname === window.location.pathname) {

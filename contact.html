@@ -17,21 +17,22 @@
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header site-header--overlay">
   <div class="container">
     <a href="index.html" class="brand" aria-label="Avenall home">
       <img src="assets/letter_navy.png" alt="" class="brand-mark">
       <span class="brand-word">avenall</span>
     </a>
     <nav class="main-nav" id="mainNav">
-      <a href="technology.html">Technology</a>
-      <a href="advantage.html">The Advantage</a>
-      <a href="products.html">Products</a>
-      <a href="science.html">Science</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html">home</a>
+      <a href="technology.html">technology</a>
+      <a href="advantage.html">the advantage</a>
+      <a href="products.html">products</a>
+      <a href="science.html">science</a>
+      <a href="contact.html">contact</a>
     </nav>
     <div class="header-actions">
-      <a href="contact.html" class="btn btn-outline">Partner With Us</a>
+      <a href="contact.html" class="btn btn-outline">partner With Us</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -39,14 +40,17 @@
   </div>
 </header>
 
-<main>
+<main class="wide-page-content">
 
   <section class="page-hero">
+    <div class="page-hero-word" aria-hidden="true">contact</div>
+  </section>
+
+  <section class="page-intro">
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
-      <div class="eyebrow">Get In Touch</div>
-      <h1>Let's put oats to work in your line.</h1>
-      <p class="lead">Whether you manufacture disposable gloves, distribute skincare, or want to bring Avenall™ into your facility, we'd love to hear from you.</p>
+      <img src="assets/dot_olive.png" alt="" class="page-intro-mark">
+      <h1>Re-imagining the future of skin care.</h1>
+      <p class="lead">Whether you manufacture nitrile gloves, distribute skincare, or want to bring Avenall™ into your facility, we'd love to hear from you.</p>
     </div>
   </section>
 
@@ -72,33 +76,33 @@
 
         <form class="inquiry" id="inquiryForm">
           <div class="field">
-            <label for="name">Full Name</label>
+            <label for="name">full name</label>
             <input type="text" id="name" name="name" placeholder="Jane Doe" required>
           </div>
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email">email</label>
             <input type="email" id="email" name="email" placeholder="jane@company.com" required>
           </div>
           <div class="field full">
-            <label for="company">Company</label>
+            <label for="company">company</label>
             <input type="text" id="company" name="company" placeholder="Company name">
           </div>
           <div class="field full">
             <label for="interest">I'm interested in</label>
             <select id="interest" name="interest">
-              <option>Glove coating licensing</option>
-              <option>Avenall™ skincare products</option>
-              <option>Distribution partnership</option>
-              <option>General inquiry</option>
+              <option>glove coating licensing</option>
+              <option>avenall™ skincare products</option>
+              <option>distribution partnership</option>
+              <option>general inquiry</option>
             </select>
           </div>
           <div class="field full">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us a bit about what you're looking for..."></textarea>
+            <textarea id="message" name="message" placeholder="tell us a bit about what you're looking for..."></textarea>
           </div>
           <div class="full">
-            <button type="submit" class="btn btn-primary">Send Inquiry</button>
-            <p class="form-note">This opens your email app with a pre-filled message to avenalloats@oei-wi.com; just hit send from there. We typically respond within two business days.</p>
+            <button type="submit" class="btn btn-primary">send inquiry</button>
+            <p class="form-note">this opens your email app with a pre-filled message to avenalloats@oei-wi.com; just hit send from there. We typically respond within two business days.</p>
           </div>
         </form>
       </div>
@@ -128,6 +132,7 @@
       <div class="footer-col">
         <h5>Company</h5>
         <ul>
+          <li><a href="index.html#about">About</a></li>
           <li><a href="products.html">Products</a></li>
           <li><a href="contact.html">Partner With Us</a></li>
           <li><a href="contact.html">Contact</a></li>
