@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =====================================================================
    Avenall™ site styles
    Editorial layout: lots of whitespace, hairline rules, small labels.
@@ -111,7 +112,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease, gap 0.2s ease;
 }
-.link-arrow::after { content: "→"; }
+.link-arrow::after { content: "\2192"; } /* right arrow, written as a code so it shows correctly everywhere */
 .link-arrow:hover { border-bottom-color: currentColor; gap: 14px; }
 
 .section { padding: var(--section) 0; }
