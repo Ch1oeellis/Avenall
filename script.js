@@ -1,20 +1,3 @@
-// Splash intro (home page only) — show the mark alone, then phase into the page
-const splash = document.getElementById('splash');
-if (splash) {
-  document.documentElement.style.overflow = 'hidden';
-
-  const hideSplash = () => {
-    if (splash.classList.contains('is-hidden')) return;
-    splash.classList.add('is-hidden');
-    document.documentElement.style.overflow = '';
-    setTimeout(() => splash.remove(), 650);
-  };
-
-  window.addEventListener('load', () => setTimeout(hideSplash, 2000));
-  // Safety net in case the load event is delayed by slow assets
-  setTimeout(hideSplash, 3800);
-}
-
 // Home page header — transparent over the hero photo, solid once the page scrolls
 const overlayHeader = document.querySelector('.site-header--overlay');
 if (overlayHeader) {
@@ -103,4 +86,13 @@ if (inquiryForm) {
       btn.disabled = false;
     }, 2500);
   });
+}
+
+// Round "partner with us" badge: tuck it away while the footer is on screen
+const badge = document.querySelector('.badge');
+const footer = document.querySelector('.site-footer');
+if (badge && footer && 'IntersectionObserver' in window) {
+  new IntersectionObserver(([entry]) => {
+    badge.classList.toggle('is-hidden', entry.isIntersecting);
+  }).observe(footer);
 }

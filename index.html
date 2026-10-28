@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avenall™ | Botanical-Derived Glove Coating Technology &amp; Skincare</title>
-<meta name="description" content="Avenall™ pairs a patent-pending oat glove coating with a complementary oat-derived skincare line, designed to support softer, more comfortable-looking skin, by Oat Extract Innovations, LLC.">
+<title>Avenall™ | Botanical Glove Coating Technology &amp; Skincare</title>
+<meta name="description" content="Avenall™ pairs a patent-pending oat glove coating with a complementary oat-derived skincare line, designed to keep hands feeling soft and comfortable through every shift. By Oat Extract Innovations, LLC.">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_180.png">
@@ -17,29 +17,22 @@
 </head>
 <body>
 
-<!-- ===================== Splash ===================== -->
-<div class="splash" id="splash" aria-hidden="true">
-  <img src="assets/letter_navy.png" alt="Avenall" class="splash-mark">
-</div>
-
 <!-- ===================== Header ===================== -->
 <header class="site-header site-header--overlay">
   <div class="container">
-    <a href="index.html" class="brand" aria-label="avenall home">
-      <img src="assets/letter_navy.png" alt="" class="brand-mark">
-    </a>
+    <div class="bar">
+      <a href="index.html" class="brand" aria-label="Avenall home">
+        <img src="assets/letter_navy.png" alt="" class="brand-mark">
+      </a>
 
-    <nav class="main-nav" id="mainNav"> 
-      <a href="index.html">home</a>
-      <a href="technology.html">technology</a>
-      <a href="advantage.html">the advantage</a>
-      <a href="products.html">products</a>
-      <a href="science.html">science</a>
-      <a href="contact.html">contact</a>
-    </nav>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">home</a>
+        <a href="technology.html">technology &amp; science</a>
+        <a href="advantage.html">the advantage &amp; products</a>
+        <a href="contact.html">contact</a>
+      </nav>
 
-    <div class="header-actions">
-      <a href="contact.html" class="btn btn-outline">partner with us</a>
+      <span class="header-note">Oats is in our name™</span>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -47,125 +40,126 @@
   </div>
 </header>
 
-<main id="top">
+<!-- Round "partner with us" button that stays on screen -->
+<a href="contact.html" class="badge">partner<br>with us</a>
+
+<main>
 
   <!-- ===================== Hero ===================== -->
   <section class="home-hero">
     <p class="home-hero-tagline">the first of its kind multi-step handcare system specially formulated for healthcare workers</p>
-    <a href="technology.html" class="btn btn-square btn-maroon">explore the technology</a>
+    <a href="technology.html" class="btn btn-maroon">explore the technology</a>
     <h1 class="home-hero-wordmark">avenall</h1>
-  <section class="hero section-pad">
-    <div class="container">
-      <div class="hero-copy">
-        <div class="hero-mark">
-          <svg viewBox="0 0 400 400" fill="none">
-            <circle cx="200" cy="200" r="188" stroke="var(--navy)" stroke-width="7" stroke-dasharray="20 20" opacity="1"/>
-            <circle cx="200" cy="200" r="130" stroke="var(--olive)" stroke-width="7"/>
-            <circle cx="200" cy="200" r="34" fill="var(--maroon)"/>
-          </svg>
+  </section>
+
+  <!-- ===================== Intro statement ===================== -->
+  <section class="section section--sand">
+    <div class="container statement reveal">
+      <span class="label">Avenall™</span>
+      <p class="display">A botanical glove coating, sanitizer, soap, and lotion, designed to work together so hands stay soft and comfortable from the first wash of a shift to the last.</p>
+    </div>
+  </section>
+
+  <!-- ===================== The problem ===================== -->
+  <section class="section">
+    <div class="container fig reveal">
+      <div class="fig-media">
+        <span class="fig-caption">fig. 1 · the problem</span>
+        <img src="assets/grass3-web.jpg" alt="Wind-swept grass" loading="lazy">
+      </div>
+      <div class="fig-text">
+        <span class="label">The problem</span>
+        <p>Constant washing strips away skin's natural oils, sanitizer dries hands further, and hours in gloves leave skin feeling tight and uncomfortable. Healthcare workers feel it every shift.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr class="rule"></div>
+
+  <!-- ===================== The technology ===================== -->
+  <section class="section">
+    <div class="container feature reveal">
+      <div class="feature-text">
+        <span class="label">The technology</span>
+        <h2>2,000× smaller than colloidal oatmeal.</h2>
+        <p>Our patent-pending process frees the actives locked inside the oat and shrinks them, so they diffuse into skin instead of sitting on the surface.</p>
+        <a href="technology.html" class="link-arrow">Discover the technology</a>
+      </div>
+      <!-- Size comparison: big circle = colloidal oatmeal, tiny dot = Avenall actives (not to scale) -->
+      <figure class="size-compare">
+        <svg viewBox="0 0 560 340" role="img" aria-label="A large circle for a colloidal oatmeal particle, about 2 micrometers wide, beside a tiny dot for an Avenall active, about 2,000 times smaller">
+          <!-- colloidal oatmeal particle -->
+          <circle class="sc-big" cx="190" cy="160" r="150"/>
+          <!-- Avenall active, with a short pointer line so the dot is easy to spot -->
+          <line class="sc-pointer" x1="452" y1="296" x2="452" y2="226"/>
+          <circle class="sc-dot" cx="452" cy="305" r="5"/>
+          <!-- shared baseline -->
+          <line class="sc-base" x1="0" y1="310" x2="560" y2="310"/>
+          <!-- width marker under the big circle -->
+          <path class="sc-measure" d="M40 322 V334 M40 328 H340 M340 322 V334"/>
+        </svg>
+        <div class="size-compare-labels">
+          <div>
+            <span class="label">Colloidal oatmeal particle</span>
+            <span class="size-compare-figure">About 2 micrometers</span>
+          </div>
+          <div>
+            <span class="label">Avenall™ active</span>
+            <span class="size-compare-figure size-compare-figure--ours">2,000× smaller</span>
+          </div>
         </div>
-        <h1>Avenall Advantage™ is the first-ever skincare system designed for healthcare professionals</h1>
-        <div class="hero-divider"></div>
-        <h2>Our patent-pending formulations help repair skin and prevent dryness and irritation caused by repeated hand washing, sanitizing, and glove use.</h2>
-        <p class="lead">Each of our products use unique, specially formulated botanical extracts to target multiple stages of hand care. Our inner glove coating provides superior protection to the skin microbiome, our sanitizer and soap work to maintain the integrity of the skin, and our lotion ensures ongoing repair and maintenance. Used together, they create the Avenall Advantage™.</p>
-        <div class="hero-ctas">
-          <a href="technology.html" class="btn btn-primary">
-            Explore the Technology
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a href="contact.html" class="btn btn-outline">Partner With Us</a>
-        </div>
+        <figcaption>Not to scale. A micrometer is one-thousandth of a millimeter.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== The Avenall Advantage ===================== -->
+  <section class="section section--sand">
+    <div class="container split reveal">
+      <div class="split-media">
+        <img src="assets/grass1-web.jpg" alt="Golden grass against a clear sky" loading="lazy">
+      </div>
+      <div>
+        <span class="label">The Avenall Advantage™</span>
+        <h2>Care built around the whole shift.</h2>
+        <ol class="points">
+          <li><span class="num">01</span><div><h3>Before · Sanitizer</h3><p>Cleanses without leaving hands feeling stripped.</p></div></li>
+          <li><span class="num">02</span><div><h3>During · Glove coating</h3><p>Oat actives work with skin for as long as gloves are on.</p></div></li>
+          <li><span class="num">03</span><div><h3>After · Lotion</h3><p>Replenishes moisture so hands feel soft again.</p></div></li>
+        </ol>
+        <a href="advantage.html#products" class="link-arrow">See the products</a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== Introduction ===================== -->
-  <section class="story reveal">
-    <div class="container">
-      <div class="story-copy">
-        <h2>Our patent-pending formulations help skin look and feel softer and more comfortable through repeated hand washing, sanitizing, and glove use</h2>
-        <img src="assets/dot_olive.png" alt="" class="story-mark">
-        <p>Each of our products uses unique, specially formulated botanical extracts to care for hands at every stage. Our inner glove coating keeps skin feeling comfortable and looking balanced while gloves are on, our sanitizer and soap work to maintain the integrity of the skin, and our lotion replenishes moisture after every shift. Used together, they create the Avenall Advantage™.</p>
-        <a href="advantage.html" class="btn btn-square btn-navy">discover the Avenall Advantage™</a>
+  <!-- ===================== About / Our Story ===================== -->
+  <section class="section" id="about">
+    <div class="container story reveal">
+      <div class="story-text">
+        <span class="label">About Avenall™</span>
+        <h2>Our story</h2>
+        <p>Avenall™ began with our grandfather, Joe Neuser: a creator, inventor, teacher, and leader until his final days. Over nearly a decade, Joe and his business partners worked quietly but passionately on oat-derived formulations, ultimately developing a patented approach to oat-based skincare ingredients.</p>
+        <p>When Joe passed away unexpectedly, his work could have ended with him. Instead, we chose to carry it forward. Today, Avenall™ is led by his grandchildren (Jackson, Payton, Ryan, and Chloe), who are building the company he envisioned and bringing his formulations to the brands and formulators who can put them to work.</p>
+        <p>We bring fresh energy to a foundation of years of research. Every partnership we build is a way of honoring the curiosity, persistence, and craftsmanship that defined our grandfather’s life.</p>
+        <p class="story-quote">Avenall™ exists to carry forward Joe Neuser's vision: bringing science-backed, oat-derived innovation to the skincare and wellness brands that make products people trust.</p>
       </div>
+      <figure class="story-media story-media--wide">
+        <img src="assets/grandkids-web.jpg" alt="Joe Neuser with his grandchildren" loading="lazy">
+        <figcaption>Joe Neuser with his grandchildren</figcaption>
+      </figure>
     </div>
   </section>
 
-  <div class="story-steps">
-    <ol class="story-steps-list">
-      <li><strong>Coated Gloves</strong><span>Protects the skin microbiome.</span></li>
-      <li><strong>Infused Sanitizers</strong><span>Maintains skin integrity against alcohol-related damage.</span></li>
-      <li><strong>Infused Lotion</strong><span>Restores skin, calms inflammation, and supports repair and maintenance.</span></li>
-    </ol>
-  </div>
-
-  <!-- ===================== The Problem + Explore ===================== -->
-  <section class="why-band reveal">
-    <div class="container">
-      <div class="why-intro">
-        <div class="eyebrow">The Problem</div>
-        <h2>Healthcare workers' hands frequently end up dry, rough, and uncomfortable during and after shifts.</h2>
-        <p>Constant hand washing strips away the skin's natural oils, and sanitizing dries hands out even further. On top of that, gloves create a warm, damp, occlusive environment that leaves skin feeling tight and uncomfortable by the end of a shift.</p>
-        <p>Avenall™ understands these challenges and developed a complete system to keep hands looking and feeling soft, smooth, and comfortable using our botanical formulations.</p>
-      </div>
-
-      <div class="why-list">
-        <a href="technology.html" class="why-item">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg></div>
-          <div class="tag">The Technology</div>
-          <h3>2,000× smaller, full bioavailability.</h3>
-          <p>Patent-pending botanical extracts that diffuse into the skin quicker than traditional colloidal oats for lasting comfort.</p>
-        </a>
-
-        <a href="advantage.html" class="why-item">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          <div class="tag">The Avenall Advantage™</div>
-          <h3>Care built around your whole shift.</h3>
-          <p>A holistic routine that performs all day, pairing a glove coating with a skincare system that creates a synergistic effect.</p>
-        </a>
-
-        <a href="products.html" class="why-item">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <div class="tag">The Products</div>
-          <h3>Before, during, and after the glove.</h3>
-          <p>Barrier sanitizer, nourishing lotion, and glove coating actives: the full Avenall™ lineup works around the clock.</p>
-        </a>
-
-        <a href="science.html" class="why-item">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M9 2h6M10 2v6l-5 9a2 2 0 001.7 3h10.6a2 2 0 001.7-3l-5-9V2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
-          <div class="tag">The Science</div>
-          <h3>Botanicals, the microbiome, and modern science.</h3>
-          <p>Botanicals have been part of skincare for centuries. Our process is how we finally put that history to work at a scale the skin can use.</p>
-        </a>
-      </div>
+  <!-- ===================== Closing ask ===================== -->
+  <section class="cta-split">
+    <div class="cta-panel">
+      <span class="label">Partner with us</span>
+      <h2>Bring Avenall™ to your line or your facility.</h2>
+      <p>Glove manufacturers, skincare distributors, and healthcare facilities: we'd love to hear what you're building.</p>
+      <a href="contact.html" class="link-arrow">Start a conversation</a>
     </div>
-  </section>
-
-  <!-- ===================== About ===================== -->
-  <section class="story story--about reveal" id="about">
-    <div class="container">
-      <div class="story-visual story-visual--plain">
-        <img src="assets/urszula-trojanowska-poppies-square.jpg" alt="Poppies and daisies growing among oats">
-      </div>
-
-      <div class="story-copy">
-        <div class="eyebrow">About Avenall™</div>
-        <h2>Our Story and Mission</h2>
-        <p>Avenall™ begin with our Grandfather, Joe Neuser who was an inventor, real-estate developer, teacher, and leader at heart. This company was his retirement brain-child, though we joke he was never really retired and always had a project. Throughout nearly a decade of developing various patented formulas with his business partners, he was working towards the next generation of oat derived skincare. His abrupt passing left our family responsible for carrying on his vision and honoring his legacy. Now run by his grandchildren, Jackson, Payton, Ryan, and Chloe, we are destined to continue his work and build Avenall. 
-          <p>Our name comes from <em>Avena sativa</em>, the common oat, and our work starts in the same place: taking a botanical that has been part of skincare for centuries and making it work harder for the people who wear gloves all day.</p>
-        <p>Our patent-pending process produces advanced oat extracts with actives roughly 2,000 times smaller than colloidal oatmeal. We build them into disposable glove coatings and a complementary line of soap, sanitizer, and lotion, and we partner with glove manufacturers and healthcare facilities to bring them to hardworking hands.</p>
-        <a href="science.html" class="btn btn-navy">read the science</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== Final CTA ===================== -->
-  <section class="final-cta section-pad reveal">
-    <div class="container">
-      <div class="eyebrow">Let's Talk</div>
-      <h2>Ready to bring Avenall™ science to your line?</h2>
-      <p>Whether you manufacture disposable gloves, distribute skincare, or want to bring Avenall™ into your facility, we'd love to hear from you.</p>
-      <a href="contact.html" class="btn btn-primary">Partner With Us</a>
+    <div class="cta-media">
+      <img src="assets/joana-abreu-meadow-2600.jpg" alt="A meadow of tall grass under a soft sky" loading="lazy">
     </div>
   </section>
 
@@ -174,41 +168,23 @@
 <!-- ===================== Footer ===================== -->
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <div class="brand-lockup">
-          <img src="assets/letter_peach.png" alt="">
-          <span class="brand-word">avenall</span>
-        </div>
-        <p>A patent-pending oat technology platform for disposable gloves and skincare, by Oat Extract Innovations, LLC.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Explore</h5>
-        <ul>
-          <li><a href="technology.html">Technology</a></li>
-          <li><a href="advantage.html">The Advantage</a></li>
-          <li><a href="science.html">Science</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Partner With Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Connect</h5>
-        <ul>
-          <li><a href="mailto:avenalloats@oei-wi.com">avenalloats@oei-wi.com</a></li>
-        </ul>
-      </div>
+    <img src="assets/letter_peach.png" alt="" class="footer-mark">
+    <span class="label">Oat Extract Innovations, LLC</span>
+    <p class="footer-word">avenall</p>
+    <div class="footer-details">
+      Glove coating actives &amp; skincare<br>
+      <a href="mailto:avenalloats@oei-wi.com">avenalloats@oei-wi.com</a>
     </div>
+
     <div class="footer-bottom">
-      <span>© 2026 Oat Extract Innovations, LLC. All rights reserved.</span>
-      <span>Avenall® is a trademark of Oat Extract Innovations, LLC.</span>
+      <span>© 2026 Oat Extract Innovations, LLC</span>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html#about">about</a>
+        <a href="technology.html">technology &amp; science</a>
+        <a href="advantage.html">the advantage &amp; products</a>
+        <a href="contact.html">contact</a>
+      </nav>
+      <span>Avenall® is a trademark of Oat Extract Innovations, LLC</span>
     </div>
   </div>
 </footer>

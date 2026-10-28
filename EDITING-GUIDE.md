@@ -11,16 +11,17 @@ Each page you see on the live site is its own file:
 
 | File | Page |
 |---|---|
-| `index.html` | Home |
-| `technology.html` | Technology |
-| `advantage.html` | The Advantage |
-| `products.html` | Products |
-| `science.html` | Science |
+| `index.html` | Home (includes the About / Our Story section) |
+| `technology.html` | Technology & Science |
+| `advantage.html` | The Advantage & Products |
 | `contact.html` | Contact |
 
+`products.html` and `science.html` are now just redirects to the merged
+pages, so old links keep working. You don't need to edit them.
+
 `styles.css` controls colors, fonts, spacing, layout — everything visual.
-`script.js` controls small behaviors (mobile menu, the splash screen, the
-contact form). You'll almost never need to touch these two for a copy
+`script.js` controls small behaviors (mobile menu, the header over the home
+photo, the round "partner with us" badge, the contact form). You'll almost never need to touch these two for a copy
 change; 95% of your edits will happen inside the `.html` files.
 
 ## 2. Reading HTML: the one thing you need to understand
@@ -122,18 +123,18 @@ retype them incorrectly (missing the `;` at the end will break it).
 
 ## 7. A worked example
 
-Say you want to change the Products page subheading. Open `products.html`
+Say you want to change the products heading. Open `advantage.html`
 in VS Code, use **Find** (Cmd+F) to search for a few words you remember
-from the current text, e.g. "before and after every glove":
+from the current text, e.g. "Before, during, and after":
 
 ```html
-<h1>Avenall™: before and after every glove.</h1>
+<h2>Before, during, and after the glove.</h2>
 ```
 
-Change only the part between `<h1>` and `</h1>`:
+Change only the part between `<h2>` and `</h2>`:
 
 ```html
-<h1>Avenall™: your complete shift-long skincare system.</h1>
+<h2>Your complete shift-long skincare system.</h2>
 ```
 
 Save the file. That's the whole edit.
@@ -158,3 +159,28 @@ together when you click near one — if you click right after an `<h1>` and
 its matching `</h1>` *doesn't* highlight, that's usually your bug. Worst
 case, everything is saved in git history — you can always undo by finding
 the previous commit and reverting.
+
+## 10. Page building blocks
+
+Every page is made of a few repeating blocks. Each one starts with a
+comment like `<!-- ===================== The problem ===================== -->`
+so you can find it quickly. To add another point or step, copy one whole
+`<li>...</li>` or `<div class="step">...</div>` line and change its words.
+
+| Block | What it looks like | What to edit |
+|---|---|---|
+| `statement` | small label + one large sentence | the label and the sentence |
+| `fig` | small photo with a sideways caption + a short paragraph | caption, label, paragraph, photo |
+| `feature` | heading + short text + link, two photos on the right | heading, text, link words |
+| `split` with `points` | photo + heading + numbered list | each `<h3>` title and one-line `<p>` |
+| `steps` | three numbered columns | each `<h3>` title and one-line `<p>` |
+| `compare` | two big numbers side by side | the number and the line under it |
+| `products` | three colored cards | product name, label, one-line description |
+| `cta-split` | colored panel + photo at the end of a page | label, heading, sentence, link words |
+
+**Keep it short.** Each point is meant to be one sentence. If a point needs
+more, it probably belongs on its own line as a new point.
+
+**Swapping a photo:** put the new image in `assets/`, then change the file
+name inside `src="assets/..."`. Large camera photos should be resized first
+(around 2000 pixels wide is plenty) or the page will load slowly.
